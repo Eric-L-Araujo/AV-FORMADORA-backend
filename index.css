@@ -1,0 +1,44 @@
+.container {
+    background-color: rgb(255, 255, 255);
+
+}
+
+.container-img {
+    max-width: 350px;
+    
+    border-radius: 100%;
+  
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.index {
+    background-color: grey;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* .index {
+    background-color: grey;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+} */
+
+.page01
+
+
+.result {
+    font-size: 40px;
+    color: green;
+}
+
+
+img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
