@@ -101,7 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!-- ESTILO INTERNO DO IFRAME -->
 <style>
-      result {
+      body {
         margin: 0;
         padding: 0;
         color: green;
