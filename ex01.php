@@ -1,11 +1,13 @@
 <?php include 'cabecalho.php'?>
 
-<form action="processa.php" method="post" name="form"  style="margin: 20px;" target="resultadoFrame">
+<form action="processa.php" method="post" name="form"  style="margin: 50px;" target="resultadoFrame">
+<input type="hidden" name="action" value="form1">
 <div class="row">
   <h1>Exercício 1</h1>
-  <iframe frameborder="1" id="resultadoFrame" name="resultadoFrame" class="">
-
-  </iframe>
+  <div class="col-lg-7">
+      <iframe frameborder="1" id="resultadoFrame" name="resultadoFrame">
+      </iframe>
+  </div> 
   <div class="row justify-content-md">
     <div class="col-lg-3">
       <div class="form-floating mb-3">
@@ -38,8 +40,6 @@
       <a href="index.php"><button type="button" value="voltar" style="height: 50px; width: 100px; border-radius:8px;">Voltar</button></a>
     </div>
   </div>
-  
-
 </div>
 </form>
 <?php include 'rodape.php'?>

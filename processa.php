@@ -26,30 +26,90 @@ function repeatName() {
     
     }
 
-    
+
 }
 
-repeatName();
+// EXERCÍCIO 02
+// Função para autenticar meu login e seha do AVA.
+function validarCampos() {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $login = ($_POST['login']);
+        $senha = ($_POST['senha']);
+        $matricula = 24201601;
+        $pass = 12345678;
+        if (($login == $matricula) && ($senha == $pass)) {
+            echo "<p>Usuário autenticado com sucesso!</p>";
+        } else {
+            echo "[Falha na autenticação] Os dados inseridos não conferem!";
+        }
+        // foreach ($_POST as key -> $value) {
+        //     echo "$key: $value <br>";
+        // }
+    } 
+}
 
 
-// // EXERCÍCIO 02
-// // Função para autenticar meu login e seha do AVA.
 
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     // $matricula = 24201601;
-//     // $pass = 12345678;
-//     $login = ($_POST['login']);
-//     $senha = ($_POST['senha']);
+// EXERCÍCIO 3
+
+function calcularDensidade() {
     
-//     if (!empty($login) && !empty($senha)) {
-//         echo "<p>Usuário autenticado com sucesso!</p>";
-//     } else {
-//         echo "[ERRO] Os dados inseridos não conferem";
-//     }
-//     // foreach ($_POST as key -> $value) {
-//     //     echo "$key: $value <br>";
-//     // }
-// } 
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $massa = htmlspecialchars($_POST['massa']);
+        $volume = htmlspecialchars($_POST['volume']);
+        
+        
+        if (!empty($massa) && !empty($volume)) {
+            $densidade = floatval($massa) / floatval($volume);
+            echo 'A densidade do material é de: '.$densidade. ' por g/m³ (centímetros cúbicos)';
+        } 
+        else {
+        echo 'Por favor, preencha os campos corretamente para obter o resultado.';
+    }
+ }
 
+   
+}
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $rota = $_POST['action'];
+
+    switch ($rota) {
+        case 'form1':
+            repeatName();
+            break;
+        case 'form2':
+            validarCampos();
+            break;
+        case 'form3':
+            calcularDensidade();
+            break;
+        default:
+            echo 'Ação inválida.';
+            break;
+            
+
+
+    }
+
+
+}
 
 ?>
+
+
+<!-- ESTILO INTERNO DO IFRAME -->
+<style>
+      result {
+        margin: 0;
+        padding: 0;
+        color: green;
+        width: 100%;
+        height:100%;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+
+</style>

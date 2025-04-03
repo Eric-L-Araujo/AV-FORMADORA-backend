@@ -18,7 +18,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Principal</a>
+          <a class="nav-link active" href="index.php" name="principal">Principal</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="ex01.php" name="ex01">Exercício 1</a>
@@ -27,7 +27,7 @@
           <a class="nav-link" href="ex02.php" name="ex02">Exercício 2</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" name="ex03">Exercício 3</a>
+          <a class="nav-link" href="ex03.php" name="ex03">Exercício 3</a>
         </li>
       </ul>
       <form class="d-flex" role="search">

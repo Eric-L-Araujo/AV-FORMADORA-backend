@@ -1,24 +1,17 @@
-.container {
-    background-color: rgb(255, 255, 255);
-
+body {
+    height: 100vh;
 }
 
-.container-img {
-    max-width: 350px;
-    
-    border-radius: 100%;
-  
-    text-align: center;
-    align-items: center;
-    padding: 15px;
-}
-
-
-.index {
+.fundo {
     background-color: grey;
     font-size: 16px;
     text-align: center;
 }
+
+.space {
+    margin: 100px
+}
+
 
 /* .index {
     background-color: grey;
@@ -28,17 +21,22 @@
     text-align: center;
 } */
 
-.page01
-
-
-.result {
-    font-size: 40px;
-    color: green;
+.linhas {
+    border: 1px solid grey;
+    border-radius: 10px;
 }
 
-
 img {
-    max-width: 300px;
-    border-radius: 50%;
+    margin: 10px;
+    width: 300px;
+    border-radius: 100%;
+    
+}
+
+iframe {
+    max-width: 60%;
+    max-height:100px;
+    border: 2px solid green;
+    border-radius: 5px;
 }
 
